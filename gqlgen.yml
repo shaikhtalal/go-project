@@ -1,0 +1,12 @@
+schema:
+- pkg/x/*.graphqls
+exec:
+  filename: pkg/x/graph/generated/generated.go
+  package: generated
+model:
+  filename: pkg/x/graph/model/models_gen.go
+  package: model
+resolver:
+  layout: follow-schema
+  dir: pkg/x/graph
+  package: x
